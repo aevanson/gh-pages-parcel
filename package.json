@@ -1,0 +1,14 @@
+{
+  "name": "parcel-gh-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "parcel src/pages/*.html",
+    "production": "parcel build src/pages/*.html --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
