@@ -4,11 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "develop": "parcel src/pages/*.html",
-    "production": "parcel build src/pages/*.html --public-url ./",
+    "start": "parcel src/pages/index.html src/pages/**/*",
+    "build": "parcel build src/pages/index.html src/pages/**/* --public-url ./",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "parcel-plugin-handlebars-precompile": "^1.0.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.1.1"
+  }
 }
